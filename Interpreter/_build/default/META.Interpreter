@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "Interpreter.cma"
+archive(native) = "Interpreter.cmxa"
+plugin(byte) = "Interpreter.cma"
+plugin(native) = "Interpreter.cmxs"

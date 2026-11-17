@@ -1,0 +1,52 @@
+(lang dune 3.24)
+(name Interpreter)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (Interpreter.a
+   Interpreter.cma
+   Interpreter.cmxa
+   META
+   dune-package
+   interpreter.cmi
+   interpreter.cmt
+   interpreter.cmx
+   interpreter.ml
+   interpreter__Mathdef.cmi
+   interpreter__Mathdef.cmt
+   interpreter__Mathdef.cmx
+   interpreter__Typedefs.cmi
+   interpreter__Typedefs.cmt
+   interpreter__Typedefs.cmx
+   mathdef.ml
+   opam
+   typedefs.ml))
+ (libexec (Interpreter.cmxs))
+ (bin (Interpreter)))
+(library
+ (name Interpreter)
+ (kind normal)
+ (archives (byte Interpreter.cma) (native Interpreter.cmxa))
+ (plugins (byte Interpreter.cma) (native Interpreter.cmxs))
+ (native_archives Interpreter.a)
+ (main_module_name Interpreter)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name interpreter)
+     (visibility public)
+     (kind alias)
+     (source (path Interpreter) (impl (path interpreter.ml-gen))))
+    (name Interpreter)
+    (modules
+     (module
+      (obj_name interpreter__Mathdef)
+      (visibility public)
+      (source (path Mathdef) (impl (path mathdef.ml))))
+     (module
+      (obj_name interpreter__Typedefs)
+      (visibility public)
+      (source (path Typedefs) (impl (path typedefs.ml))))))
+   (wrapped true))))

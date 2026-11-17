@@ -1,0 +1,26 @@
+lib: [
+  "_build/install/default/lib/Interpreter/Interpreter.a"
+  "_build/install/default/lib/Interpreter/Interpreter.cma"
+  "_build/install/default/lib/Interpreter/Interpreter.cmxa"
+  "_build/install/default/lib/Interpreter/META"
+  "_build/install/default/lib/Interpreter/dune-package"
+  "_build/install/default/lib/Interpreter/interpreter.cmi"
+  "_build/install/default/lib/Interpreter/interpreter.cmt"
+  "_build/install/default/lib/Interpreter/interpreter.cmx"
+  "_build/install/default/lib/Interpreter/interpreter.ml"
+  "_build/install/default/lib/Interpreter/interpreter__Mathdef.cmi"
+  "_build/install/default/lib/Interpreter/interpreter__Mathdef.cmt"
+  "_build/install/default/lib/Interpreter/interpreter__Mathdef.cmx"
+  "_build/install/default/lib/Interpreter/interpreter__Typedefs.cmi"
+  "_build/install/default/lib/Interpreter/interpreter__Typedefs.cmt"
+  "_build/install/default/lib/Interpreter/interpreter__Typedefs.cmx"
+  "_build/install/default/lib/Interpreter/mathdef.ml"
+  "_build/install/default/lib/Interpreter/opam"
+  "_build/install/default/lib/Interpreter/typedefs.ml"
+]
+libexec: [
+  "_build/install/default/lib/Interpreter/Interpreter.cmxs"
+]
+bin: [
+  "_build/install/default/bin/Interpreter"
+]

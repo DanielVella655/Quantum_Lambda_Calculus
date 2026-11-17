@@ -1,0 +1,26 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage[colorlinks=true, urlcolor=blue, citecolor=black]{hyperref}
+
+\title{\Huge \textbf{ICT3004 - Applied Practical Task}}
+\author{%
+  \Large Daniel Vella \\[0.3em]
+  \large Supervisor: Prof. Adrian Francalanza
+}
+\date{} % Suppresses the automatic date display
+
+\begin{document}
+
+\maketitle
+
+\textbf{Proposed Title:} Implementing the Quantum $\lambda$-Calculus in OCaml
+
+\medskip
+
+\textbf{Abstract:} As quantum computing architectures become more prevalent, formal language abstractions are critical for writing safe, provably correct, and efficient quantum software. Peter Selinger and Benoît Valiron's quantum $\lambda$-calculus provides a typed framework for quantum computation with classical control; however, executable interpreters for the formalism remain sparse. 
+
+This project presents an end-to-end interpreter implemented in OCaml for the Selinger-Valiron quantum $\lambda$-calculus. Making use of OCaml's algebraic data types and pattern matching, the interpreter parses source expressions into an abstract syntax tree (AST), enforces affine type constraints to prevent illegal qubit duplication in accordance with the no-cloning theorem, and executes probabilistic small-step operational semantics over a simulated quantum memory. The Deutsch-Jozsa and the Quantum Teleportation algorithms are used as case studies in this project to illustrate OCaml's efficacy in bridging theoretical quantum semantics with practical language execution.
+
+\end{document}
